@@ -10,8 +10,7 @@ let cities = [
   { name: "八尾市", population: 264203 },
   { name: "寝屋川市", population: 229286 },
 ];
-const result = 
-
+const result = document.querySelector("#result")
 
 const result1 = cities.map((e) => {
   return e;
