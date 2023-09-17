@@ -6,3 +6,9 @@ const menu = [
   "カツカレー定食",
 ];
 
+const menuUl = document.querySelector("#menu");
+
+menu.forEach((e,i) => {
+  console.log(e,i);
+  menuUl.innerHTML += `<li>${e}</li>`
+});
