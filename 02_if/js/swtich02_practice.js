@@ -32,6 +32,7 @@ switch (calc) {
     break;
   default:
     ans = "error!";
+    break;
 }
 
 console.log(ans);

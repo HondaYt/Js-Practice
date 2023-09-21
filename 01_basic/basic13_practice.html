@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,55 +11,55 @@
   <link rel="stylesheet" href="../common/css/common.css">
 
 </head>
+
 <body>
   <header>
     <h1 class="docTtl">JavaScript基本&復習</h1>
   </header>
   <main>
-  <section>
-    <h2>要素の取得 - 基礎をはじめるためのまとめ</h2>
-    <p>
-      JavaScriptを書いていくための基本的な書き方のまとめです。<br>
-      基本的な書き方の理解度チェックをし、クリアできたら次のフォルダーへ移動しましょう。
-    </p>
-
-    <div class="view">
-      <input type="text" id="pen">
-      <input type="text" id="pineapple">
-      <input type="text" id="apple">
-      <input type="button" value="PPAP" id="ppap">
-    </div>
-    <div class="point">
-      <h3>Point</h3>
+    <section>
+      <h2>要素の取得 - 基礎をはじめるためのまとめ</h2>
       <p>
-          分からなかった部分などは、一度振り返り、コードを見直してみましょう。
+        JavaScriptを書いていくための基本的な書き方のまとめです。<br>
+        基本的な書き方の理解度チェックをし、クリアできたら次のフォルダーへ移動しましょう。
       </p>
-    </div>
-  </section>
+
+      <div class="view">
+        <input type="text" id="pen">
+        <input type="text" id="pineapple">
+        <input type="text" id="apple">
+        <input type="button" value="PPAP" id="ppap">
+      </div>
+      <div class="point">
+        <h3>Point</h3>
+        <p>
+          分からなかった部分などは、一度振り返り、コードを見直してみましょう。
+        </p>
+      </div>
+    </section>
   </main>
   <script>
     // basicの間はここにJavaScriptを直接記載しましょう
     // オリジナル PPAPペンパイナッポーアッポーペンを作成しコンソール画面に出力
     // 3つのテキストボックスにそれぞれ単語を入れて「PPAP」ボタンを押すと、単語の間にハイフンを入れて合体させてください
-    document.getElementById("pen")
-    document.getElementById("pineapple")
-    document.getElementById("apple")
-    document.getElementById("ppap")
 
-    ppap.onclick = () =>{
+    const ppap = document.getElementById("ppap")
     let penValue;
     let pineappleValue;
     let appleValue;
 
-    penValue = pen.value;
-    pineappleValue = pineapple.value;
-    appleValue = apple.value;
-    
+    ppap.onclick = () => {
+
+      penValue = document.getElementById("pen").value;
+      pineappleValue = document.getElementById("pineapple").value;
+      appleValue = document.getElementById("apple").value;
+
       console.log(`${penValue}-${pineappleValue}-${appleValue}-${penValue}`)
     }
     // 目標出力　Pen-PineApple-Apple-Pen 
-    
+
 
   </script>
 </body>
+
 </html>

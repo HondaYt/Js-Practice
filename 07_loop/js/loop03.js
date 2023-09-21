@@ -12,8 +12,11 @@ let cities = [
 ];
 const result = document.querySelector("#result")
 
-const result1 = cities.map((e) => {
-  return e;
+let result1 = cities.map((e) => {
+  return e.name;
 });
 
-console.log(result1);
+result1.forEach((e)=>{
+  result.innerHTML += `<li>${e}</li>`
+  console.log(e);
+})
